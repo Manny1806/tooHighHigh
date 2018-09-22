@@ -82,24 +82,30 @@ class App extends Component {
   } else if(this.state.page === "partner") { 
     return(<div className="App">
       <section className="person-section-question">
-      What is the tone of the conversation:
+      <p>What is the tone of the conversation:</p>
+      <div className="buttonGroup">
       <button>Marge Simpsons grunt</button>
       <button>Just checking in (eye roll)</button>
       <button></button>
+      </div>
       </section>
 
-       <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      <section className="person-section-question">
+      <p>What is the tone of the conversation:</p>
+      <div className="buttonGroup">
+        <button>Your mother and I are worried</button>
+        <button>Have you been eating enough</button>
+        <button>Grandma died</button>
+      </div>
       </section>
 
-       <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      <section className="person-section-question">
+      <p>What is the tone of the conversation:</p>
+      <div className="buttonGroup">
+        <button>Your mother and I are worried</button>
+        <button>Have you been eating enough</button>
+        <button>Grandma died</button>
+      </div>
       </section>
        <section className="response">
           <span className={this.state.class}></span>
@@ -109,24 +115,30 @@ class App extends Component {
     return(<div className="App">
       <h1>FIRST OF ALL!!<br/>Weed is legal in oregon ya idiot so chill out!</h1>
       <section className="person-section-question">
-      Did you break the law recently:
+      <p>Did you break the law recently:</p>
+      <div className="buttonGroup">
       <button>Yes</button>
       <button>No</button>
       <button>Maybe?</button>
+      </div>
       </section>
 
-       <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      <section className="person-section-question">
+      <p>What is the tone of the conversation:</p>
+      <div className="buttonGroup">
+        <button>Your mother and I are worried</button>
+        <button>Have you been eating enough</button>
+        <button>Grandma died</button>
+      </div>
       </section>
 
-       <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      <section className="person-section-question">
+      <p>What is the tone of the conversation:</p>
+      <div className="buttonGroup">
+        <button>Your mother and I are worried</button>
+        <button>Have you been eating enough</button>
+        <button>Grandma died</button>
+      </div>
       </section>
        <section className="response">
           <span className={this.state.class}></span>
