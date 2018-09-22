@@ -29,6 +29,18 @@
 
 .talk-button {
   border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px (0,0,0,1);
+  color: black;
+  padding: 5px 10px;
+  background-color: #BF9A54;
+  box-shadow: 2px 2px 5px 2px #3B4018;
   font-size: 30px;
+  border: none;
+  margin: 15px auto;
+  display: block;
+  width: 250px;
+}
+
+.talk-button:hover {
+  background-color: #4C591C;
+  color: white;
 }

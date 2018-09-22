@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      page: "landing"
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -9,9 +15,14 @@ class App extends Component {
           <h1 className="App-title">So you got too high?</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button className="talk-button">test</button>
+          That's ok. That's why we are here! Just select a button below that corresponds to the person/thing you are trying to talk to.</p>
+        <div className="button-group">
+          <button className="talk-button">Parents</button>
+          <button className="talk-button">Pizza Guy</button>
+          <button className="talk-button">Partner</button>
+          <button className="talk-button">COPS!</button>
+          <button className="talk-button">Parents Again</button>
+        </div>
       </div>
     );
   }
