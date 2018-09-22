@@ -27,7 +27,7 @@ class App extends Component {
         </div>
       </div>
     );
-  } else if(this.state.page === "parents") { 
+  } else if(this.state.page === "parents") {
     return(<div className="App">
       <section className="person-section-question">
       What is the tone of the conversation:
@@ -53,33 +53,39 @@ class App extends Component {
           <span className={this.state.class}>"This is alot to take in right now as I am working on my life board right now. I love you. Goodbye"</span>
       </section>
     </div>)
-  } else if(this.state.page === "pizza") { 
+  } else if(this.state.page === "pizza") {
     return(<div className="App">
       <section className="person-section-question">
-      Did you order a pizza:
+      <p>Did you order a pizza:</p>
+      <div className="buttonGroup">
       <button>Yes</button>
       <button>No</button>
       <button>I don't know</button>
+    </div>
       </section>
 
        <section className="person-section-question">
-      How tall in the pizza man/woman:
+      <p>How tall in the pizza man/woman:</p>
+      <div className="buttonGroup">
       <button>Greater than 6 feet</button>
       <button>Less than 6 feet</button>
       <button>Me height</button>
+    </div>
       </section>
 
        <section className="person-section-question">
-      Do you have money:
+      <p>Do you have money:</p>
+      <div className="buttonGroup">
       <button onClick={()=>{this.setState({class: ""})}}>Yes</button>
       <button onClick={()=>{this.setState({class: ""})}}>No</button>
       <button onClick={()=>{this.setState({class: ""})}}>Roommate owes you</button>
+    </div>
       </section>
        <section className="response">
           <span className={this.state.class}>"I'm feeling generous tonight. Here is an amount of money that is enough to pay you. No need to count it."</span>
       </section>
     </div>)
-  } else if(this.state.page === "partner") { 
+  } else if(this.state.page === "partner") {
     return(<div className="App">
       <section className="person-section-question">
       <p>What is the tone of the conversation:</p>
@@ -111,15 +117,15 @@ class App extends Component {
           <span className={this.state.class}></span>
       </section>
     </div>)
-  } else if(this.state.page === "cops") { 
+  } else if(this.state.page === "cops") {
     return(<div className="App">
       <h1>FIRST OF ALL!!<br/>Weed is legal in oregon ya idiot so chill out!</h1>
       <section className="person-section-question">
       <p>Did you break the law recently:</p>
       <div className="buttonGroup">
-      <button>Yes</button>
-      <button>No</button>
-      <button>Maybe?</button>
+        <button>Yes</button>
+        <button>No</button>
+        <button>Maybe?</button>
       </div>
       </section>
 
