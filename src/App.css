@@ -38,7 +38,17 @@
 .talk-button:hover {
   background-color: #4C591C;
   color: white;
-  transform: scale(1.1); 
+  transform: scale(1.1);
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.person-section-question p {
+  margin-bottom: 5px;
+  font-size: 1.5em;
 }
 
 .person-section-question button{
@@ -49,8 +59,8 @@
   box-shadow: 2px 2px 5px 2px #3B4018;
   font-size: 20px;
   border: none;
-  margin: 15px auto;
-  display: block;
+  margin: 0 10px;
+  margin-bottom: 30px;
   width: 250px;
   transition: all .2s ease-in-out;
 }
@@ -58,10 +68,17 @@
 .person-section-question button:hover {
   background-color: #4C591C;
   color: white;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
+.ads {
+  clear:both;
+  display:block;
+  background:url('./dominoes.gif');
+  height:331px;
+  width:500px;
+  margin:0 auto;
+}
 .notVisible {
   display: none;
 }
-
