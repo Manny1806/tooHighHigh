@@ -19,7 +19,6 @@
   font-size: 1.5em;
   width: 60vw;
   text-shadow: 0 0 2px rgba(0,0,0,.6);
-
 }
 
 .talk-button {
@@ -62,6 +61,7 @@
   transform: scale(1.1); 
 }
 
+<<<<<<< HEAD
 .ads {
   clear:both;
   display:block;
@@ -70,3 +70,9 @@
   width:500px;
   margin:0 auto;
 }
+=======
+.notVisible {
+  display: none;
+}
+
+>>>>>>> 714b832dd4262d3ba205889db82d86ae38c2f0ee
