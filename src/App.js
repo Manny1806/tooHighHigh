@@ -6,7 +6,7 @@ class App extends Component {
     super(props)
     this.state={
       page: "landing",
-      class: "notVisable"
+      class: "notVisible"
     }
   }
   render() {
@@ -37,46 +37,46 @@ class App extends Component {
       </section>
 
        <section className="person-section-question">
-      When did you last talk to your parents
+      When did you last talk to your parents:
       <button>last week</button>
       <button>i dont know</button>
       <button>last week</button>
       </section>
 
        <section className="person-section-question">
-      Are your parents seperated
-      <button>Yes</button>
-      <button>No</button>
-      <button>i dont know</button>
+      Are your parents seperated:
+      <button onClick={()=>{this.setState({class: ""})}}>Yes</button>
+      <button onClick={()=>{this.setState({class: ""})}}>No</button>
+      <button onClick={()=>{this.setState({class: ""})}}>i dont know</button>
       </section>
        <section className="response">
-          <span className={this.state.class}>"This is alot to take in right now as I am "</span>
+          <span className={this.state.class}>"This is alot to take in right now as I am working on my life board right now. I love you. Goodbye"</span>
       </section>
     </div>)
   } else if(this.state.page === "pizza") { 
     return(<div className="App">
       <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      Did you order a pizza:
+      <button>Yes</button>
+      <button>No</button>
+      <button>I don't know</button>
       </section>
 
        <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      How tall in the pizza man/woman:
+      <button>Greater than 6 feet</button>
+      <button>Less than 6 feet</button>
+      <button>Me height</button>
       </section>
 
        <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      Do you have money:
+      <button onClick={()=>{this.setState({class: ""})}}>Yes</button>
+      <button onClick={()=>{this.setState({class: ""})}}>No</button>
+      <button onClick={()=>{this.setState({class: ""})}}>Roommate owes you</button>
       </section>
        <section className="response">
-          <span className={this.state.class}></span>
+          <span className={this.state.class}>"I'm feeling generous tonight. Here is an amount of money that is enough to pay you. No need to count it."</span>
       </section>
     </div>)
   } else if(this.state.page === "partner") { 
@@ -109,10 +109,10 @@ class App extends Component {
     return(<div className="App">
       <h1>FIRST OF ALL!!<br/>Weed is legal in oregon ya idiot so chill out!</h1>
       <section className="person-section-question">
-      What is the tone of the conversation:
-      <button>Your mother and I are worried</button>
-      <button>Have you been eating enough</button>
-      <button>Grandma died</button>
+      Did you break the law recently:
+      <button>Yes</button>
+      <button>No</button>
+      <button>Maybe?</button>
       </section>
 
        <section className="person-section-question">
