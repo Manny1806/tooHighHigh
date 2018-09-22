@@ -28,3 +28,23 @@
   color: white;
   transform: scale(1.1); 
 }
+
+.person-section-question button{
+  border-radius: 5px;
+  color: black;
+  padding: 5px 10px;
+  background-color: #BF9A54;
+  box-shadow: 2px 2px 5px 2px #3B4018;
+  font-size: 20px;
+  border: none;
+  margin: 15px auto;
+  display: block;
+  width: 250px;
+  transition: all .2s ease-in-out;
+}
+
+.person-section-question button:hover {
+  background-color: #4C591C;
+  color: white;
+  transform: scale(1.1); 
+}
