@@ -5,7 +5,8 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state={
-      page: "landing"
+      page: "landing",
+      class: "notVisable"
     }
   }
   render() {
@@ -28,9 +29,107 @@ class App extends Component {
     );
   } else if(this.state.page === "parents") { 
     return(<div>
+      <section className="person-section-question">
       What is the tone of the conversation:
       <button>Your mother and I are worried</button>
       <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+       <section className="response">
+          <span className={this.state.class}></span>
+      </section>
+    </div>)
+  } else if(this.state.page === "pizza") { 
+    return(<div>
+      <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+       <section className="response">
+          <span className={this.state.class}></span>
+      </section>
+    </div>)
+  } else if(this.state.page === "partner") { 
+    return(<div>
+      <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+       <section className="response">
+          <span className={this.state.class}></span>
+      </section>
+    </div>)
+  } else if(this.state.page === "cops") { 
+    return(<div>
+      <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+
+       <section className="person-section-question">
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+      <button>Grandma died</button>
+      </section>
+       <section className="response">
+          <span className={this.state.class}></span>
+      </section>
     </div>)
   }
   }
