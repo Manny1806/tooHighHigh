@@ -25,6 +25,7 @@ class App extends Component {
           <button className="talk-button" onClick={()=>{this.setState({page:"cops"})}}>COPS!</button>
           <button className="talk-button" onClick={()=>{this.setState({page:"parents"})}}>Parents Again</button>
         </div>
+        <div className="ads"></div>
       </div>
     );
   } else if(this.state.page === "parents") { 

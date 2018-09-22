@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background: center / cover no-repeat url('./smoke.jpg');
-  height: 100vh;
+  height: 400vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -60,4 +60,13 @@
   background-color: #4C591C;
   color: white;
   transform: scale(1.1); 
+}
+
+.ads {
+  clear:both;
+  display:block;
+  background:url('./dominoes.gif');
+  height:331px;
+  width:500px;
+  margin:0 auto;
 }
