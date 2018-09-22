@@ -9,23 +9,30 @@ class App extends Component {
     }
   }
   render() {
+    if(this.state.page === "landing"){
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">So you got too high?</h1>
         </header>
         <p className="App-intro">
           That's ok. That's why we are here! Just select a button below that corresponds to the person/thing you are trying to talk to.</p>
         <div className="button-group">
-          <button className="talk-button">Parents</button>
-          <button className="talk-button">Pizza Guy</button>
-          <button className="talk-button">Partner</button>
-          <button className="talk-button">COPS!</button>
-          <button className="talk-button">Parents Again</button>
+          <button className="talk-button" onClick={()=>{this.setState({page:"parents"})}}>Parents</button>
+          <button className="talk-button" onClick={()=>{this.setState({page:"pizza"})}}>Pizza Guy</button>
+          <button className="talk-button" onClick={()=>{this.setState({page:"partner"})}}>Partner</button>
+          <button className="talk-button" onClick={()=>{this.setState({page:"cops"})}}>COPS!</button>
+          <button className="talk-button" onClick={()=>{this.setState({page:"parents"})}}>Parents Again</button>
         </div>
       </div>
     );
+  } else if(this.state.page === "parents") { 
+    return(<div>
+      What is the tone of the conversation:
+      <button>Your mother and I are worried</button>
+      <button>Have you been eating enough</button>
+    </div>)
+  }
   }
 }
 
